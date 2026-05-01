@@ -31,9 +31,12 @@ bg-[linear-gradient(90deg,#00d2ff_0%,#3a47d5_100%)] flex items-center">
             >
               Login
             </Link>
-              <button className="borde to-black text-black border-white px-8 py-3 rounded-full bg-white hover:bg-white hover:text-blue-600 transition">
+              <Link 
+               to="/service"
+              onClick={() => navigate("/service")}
+              className="borde to-black text-black border-white px-8 py-3 rounded-full bg-white hover:bg-white hover:text-blue-600 transition">
                 Learn More
-              </button>
+              </Link>
              </div>
           </div>
            {/* RIGHT IMAGE */}

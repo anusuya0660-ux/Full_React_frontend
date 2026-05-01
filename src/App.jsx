@@ -12,6 +12,7 @@ import Career from "./components/career";
 import Blog from "./components/Blog";
 import Feature from "./components/Feature";
 import Price from "./components/price";
+import Terms from "./components/Termsprivacy";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
            <Route path="/Blog" element={<Blog/>}/>
             <Route path="/Feature" element={<Feature/>}/>
             <Route path="/price" element={<Price/>}/>
+             <Route path="/Termsprivacy" element={<Terms/>}/>
 
         </Routes>
       </main>
