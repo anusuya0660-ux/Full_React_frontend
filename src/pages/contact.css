@@ -1,0 +1,110 @@
+/* Layout */
+.contact-wrapper {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT SIDE */
+.contact-left {
+  flex: 1;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-left h1 {
+  font-size: 3rem;
+}
+
+.contact-left p {
+  margin: 20px 0;
+}
+
+.contact-details p {
+  margin: 10px 0;
+}
+
+/* RIGHT SIDE */
+.contact-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* FORM BOX */
+.form-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+}
+
+/* FLOATING INPUT */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #777;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:valid ~ label {
+  top: -12px;
+  font-size: 12px;
+  color: #4facfe;
+}
+
+/* BUTTON */
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background: #4facfe;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-box button:hover {
+  background: #007bff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-left {
+    text-align: center;
+    padding: 40px 20px;
+  }
+}
